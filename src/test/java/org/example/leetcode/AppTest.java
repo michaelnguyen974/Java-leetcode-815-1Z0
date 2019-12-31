@@ -16,11 +16,12 @@ public class AppTest
     @Test
     public void sortListWithTwoNumbers() {
        App app = new App();
-	   int[] intArray = {5,2,3,1};
-	   List solution = app.sortArray(intArray);
-	   List<Integer> expected = List.of(1,2,3,5); // List.of is a factory method since Java 9
+	   int[] intArray = {5,2};
+	   List<Integer> solution = app.sortArray(intArray);
+	   List<Integer> expected = List.of(2,5); // List.of is a factory method since Java 9
 	   assertEquals(expected, solution);
-    }
+	}
+	
 
     // @Test
     // public void shouldAnswerWithTrue()
