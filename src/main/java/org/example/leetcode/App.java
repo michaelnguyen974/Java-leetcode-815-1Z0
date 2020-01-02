@@ -1,14 +1,9 @@
 package org.example.leetcode;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class App {
 
     private static final int MAX = 3;
