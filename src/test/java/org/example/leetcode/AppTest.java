@@ -21,11 +21,13 @@ public class AppTest
 	   List<Integer> expected = List.of(2,5); // List.of is a factory method since Java 9
 	   assertEquals(expected, solution);
 	}
-	
 
-    // @Test
-    // public void shouldAnswerWithTrue()
-    // {
-    //     assertEquals(true, false);
-    // }
+	@Test
+	public void sortListWithThreeNumbers() {
+		App app = new App();
+		int[] intArray = {5,2,3};
+		List<Integer> solution = app.sortArray(intArray);
+		List<Integer> expected = List.of(2,3,5);
+		assertEquals(expected, solution);
+	}
 }
