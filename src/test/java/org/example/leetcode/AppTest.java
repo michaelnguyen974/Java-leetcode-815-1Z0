@@ -39,4 +39,13 @@ public class AppTest
 		List<Integer> expected = List.of(1,2,3,5);
 		assertEquals(expected, solution);
 	}
+
+	@Test
+	public void sortListWithTwoIdenticalNumbers() {
+		App app = new App();
+		int[] intArray = {5,1,1,2,0,0};
+		List<Integer> solution = app.sortArray(intArray);
+		List<Integer> expected = List.of(0,0,1,1,2,5);
+		assertEquals(expected, solution);
+	}
 }
